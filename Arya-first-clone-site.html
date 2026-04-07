@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone ~ by Arya</title>
+    <link rel="stylesheet" href="style.1.css">
+</head>
+<body>
+
+    <!-- HERO -->
+    <div class="main">
+        <nav>
+            <span><img width="120" src="Netflix/Images/00.png.png" alt="Netflix Logo"></span>
+            <div class="nav-buttons">
+                <select class="language-select" id="langTop">
+                    <option value="en">English</option>
+                    <option value="hi">हिन्दी</option>
+                    <option value="gu">ગુજરાતી</option>
+                    <option value="jp">日本語</option>
+                    <option value="kr">한국어</option>
+                    <option value="cn">中文</option>
+                    <option value="fr">Français</option>
+                    <option value="it">Italiano</option>
+                </select>
+                <button class="sign-in-btn" id="signInBtn">Sign In</button>
+            </div>
+        </nav>
+        <div class="box"></div>
+        <div class="hero">
+            <span class="head"   id="heroTitle">Unlimited movies, shows,</span>
+            <span class="headm"  id="heroSubtitle">and more</span>
+            <span class="bottom" id="heroBottom">Starts at ₹149. Cancel at any time.</span>
+            <span class="ground" id="heroGround">Ready to watch? Enter your email to create or restart your membership.</span>
+            <div class="email-box">
+                <input type="text" id="heroEmail" placeholder="Email Address">
+                <button class="btn-red" id="heroBtn">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="sepration"></div>
+
+    <!-- TRENDING -->
+    <section class="page-section trending">
+        <h2 class="hello" id="trendHead">Trending Now</h2>
+        <div class="movie-wrapper">
+            <button class="side-arrow left-arrow">❮</button>
+            <div class="movie-row">
+                <div class="movie-card" data-title="Peaky Blinders: The Immortal Man" data-img="Netflix/Images/pk.jpg" data-tags="2024,Action,Thriller" data-desc="An action-packed thriller that will keep you on the edge of your seat.">
+                    <span class="movie-number">1</span><img src="Netflix/Images/pk.jpg" alt="1">
+                </div>
+                <div class="movie-card" data-title="Bloodhounds" data-img="Netflix/Images/bld.jpg" data-tags="2024,Drama,Romance" data-desc="A heartfelt drama exploring the complexities of love and relationships.">
+                    <span class="movie-number">2</span><img src="Netflix/Images/bld.jpg" alt="2">
+                </div>
+                <div class="movie-card" data-title="Made In Korea" data-img="Netflix/Images/mdk.jpg" data-tags="2025,Comedy,Family" data-desc="A woman from a small town in Tamil Nadu moves to South Korea — a place she always dreamed of — but struggles to find her footing in a foreign land.">
+                    <span class="movie-number">3</span><img src="Netflix/Images/mdk.jpg" alt="3">
+                </div>
+                <div class="movie-card" data-title="Kpop Demon-Hunter" data-img="Netflix/Images/kpop.jpg" data-tags="2025,Music,Drama" data-desc="A behind-the-scenes look at the glittering world of K-pop stardom.">
+                    <span class="movie-number">4</span><img src="Netflix/Images/kpop.jpg" alt="4">
+                </div>
+                <div class="movie-card" data-title="XO, Kitty" data-img="Netflix/Images/xo.jpg" data-tags="2026,U/A 13+,Show,Comedies,Romance,Dramas" data-desc="Following her heart to an elite high school in Seoul, teen matchmaker Kitty learns that life, love and family are more complicated than she ever imagined.">
+                    <span class="movie-number">5</span><img src="Netflix/Images/xo.jpg" alt="XO Kitty">
+                </div>
+                <div class="movie-card" data-title="Boyfriend On Demand" data-img="Netflix/Images/bd.jpg" data-tags="2025,Action,Crime" data-desc="A gripping crime saga following a detective through the city's underworld.">
+                    <span class="movie-number">6</span><img src="Netflix/Images/bd.jpg" alt="6">
+                </div>
+                <div class="movie-card" data-title="Bridgerton" data-img="Netflix/Images/bdr.jpg" data-tags="2024,Horror,Mystery" data-desc="A chilling mystery unravelling dark secrets beneath a quiet neighbourhood.">
+                    <span class="movie-number">7</span><img src="Netflix/Images/bdr.jpg" alt="7">
+                </div>
+                <div class="movie-card" data-title="Agent From Above" data-img="Netflix/Images/aj.jpg" data-tags="2026,Adventure,Sci-Fi" data-desc="An epic sci-fi adventure that takes you to the far reaches of the universe.">
+                    <span class="movie-number">8</span><img src="Netflix/Images/aj.jpg" alt="8">
+                </div>
+                <div class="movie-card" data-title="Beauty In Black" data-img="Netflix/Images/bty.jpg" data-tags="2025,Romance,Drama" data-desc="A sweeping romantic drama set against the backdrop of the Indian coastline.">
+                    <span class="movie-number">9</span><img src="Netflix/Images/bty.jpg" alt="9">
+                </div>
+                <div class="movie-card" data-title="Homeicide New York" data-img="Netflix/Images/h.jpg" data-tags="2026,Thriller,Suspense" data-desc="A nail-biting suspense thriller where every second counts.">
+                    <span class="movie-number">10</span><img src="Netflix/Images/h.jpg" alt="10">
+                </div>
+            </div>
+            <button class="side-arrow right-arrow">❯</button>
+        </div>
+    </section>
+
+    <!-- POPUP -->
+    <div class="popup-backdrop" id="popupBackdrop">
+        <div class="movie-popup">
+            <button class="popup-close" id="popupClose">✕</button>
+            <div class="popup-img-wrap"><img src="" alt="" id="popupImg"></div>
+            <div class="popup-overlay">
+                <span class="popup-logo" id="popupTitle"></span>
+                <div class="popup-tags" id="popupTags"></div>
+                <p id="popupDesc"></p>
+                <button id="popupBtn">Get Started ❯</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- REASONS -->
+    <section class="reasons">
+        <h2 class="reason-heading" id="reasonHead">More reasons to join</h2>
+        <div class="reason-grid">
+            <div class="reason-box">
+                <h3 id="r1t">Enjoy on your TV</h3>
+                <p  id="r1d">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV and more.</p>
+                <span class="reason-icon">🖥️</span>
+            </div>
+            <div class="reason-box">
+                <h3 id="r2t">Download your shows to watch offline</h3>
+                <p  id="r2d">Save your favourites easily and always have something to watch.</p>
+                <span class="reason-icon">⬇️</span>
+            </div>
+            <div class="reason-box">
+                <h3 id="r3t">Watch everywhere</h3>
+                <p  id="r3d">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                <span class="reason-icon">📣</span>
+            </div>
+            <div class="reason-box">
+                <h3 id="r4t">Create profiles for kids</h3>
+                <p  id="r4d">Send kids on adventures with their favourite characters in a space made just for them.</p>
+                <span class="reason-icon">😊</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="sepration"></div>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <h2 class="faq-heading" id="faqHead">Frequently Asked Questions</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-q" data-index="0"><span id="fq0">What is Netflix?</span><span class="faq-icon">+</span></button>
+                <div class="faq-a" id="fa0">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more on thousands of internet-connected devices. You can watch as much as you want, whenever you want, without a single ad — all for one low monthly price.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" data-index="1"><span id="fq1">How much does Netflix cost?</span><span class="faq-icon">+</span></button>
+                <div class="faq-a" id="fa1">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" data-index="2"><span id="fq2">Where can I watch?</span><span class="faq-icon">+</span></button>
+                <div class="faq-a" id="fa2">Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web from your personal computer or on any internet-connected device that offers the Netflix app.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" data-index="3"><span id="fq3">How do I cancel?</span><span class="faq-icon">+</span></button>
+                <div class="faq-a" id="fa3">Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees — start or stop your account at any time.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" data-index="4"><span id="fq4">What can I watch on Netflix?</span><span class="faq-icon">+</span></button>
+                <div class="faq-a" id="fa4">Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" data-index="5"><span id="fq5">Is Netflix good for kids?</span><span class="faq-icon">+</span></button>
+                <div class="faq-a" id="fa5">The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space. Kids profiles come with PIN-protected parental controls.</div>
+            </div>
+        </div>
+
+        <div class="faq-cta">
+            <p id="faqCtaText">Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="email-box" style="margin-top:14px;">
+                <input type="text" id="faqEmail" placeholder="Email address">
+                <button class="btn-red" id="faqBtn">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="sepration"></div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p class="footer-call"><span id="footerCallText">Questions? Call</span> <a href="tel:0008009191743">000-800-919-1743</a></p>
+        <div class="footer-links">
+            <a href="#" id="flFAQ">FAQ</a>
+            <a href="#" id="flHelp">Help Centre</a>
+            <a href="#" id="flAccount">Account</a>
+            <a href="#" id="flMedia">Media Centre</a>
+            <a href="#" id="flInvestor">Investor Relations</a>
+            <a href="#" id="flJobs">Jobs</a>
+            <a href="#" id="flWatch">Ways to Watch</a>
+            <a href="#" id="flTerms">Terms of Use</a>
+            <a href="#" id="flPrivacy">Privacy</a>
+            <a href="#" id="flCookie">Cookie Preferences</a>
+            <a href="#" id="flCorp">Corporate Information</a>
+            <a href="#" id="flContact">Contact Us</a>
+            <a href="#" id="flSpeed">Speed Test</a>
+            <a href="#" id="flLegal">Legal Notices</a>
+            <a href="#" id="flOnly">Only on Netflix</a>
+        </div>
+        <select class="language-select" id="langBottom" style="margin-top:20px;">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+            <option value="gu">ગુજરાતી</option>
+            <option value="jp">日本語</option>
+            <option value="kr">한국어</option>
+            <option value="cn">中文</option>
+            <option value="fr">Français</option>
+            <option value="it">Italiano</option>
+        </select>
+        <p class="footer-region" id="footerRegion">Netflix India</p>
+    </footer>
+
+    <script src="script.2.js"></script>
+</body>
+</html>
